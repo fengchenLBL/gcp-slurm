@@ -1,0 +1,134 @@
+2020-07-15 03:12:09,263	WARNING scripts.py:364 -- The --redis-port argument will be deprecated soon. Please use --port instead.
+2020-07-15 03:12:09,263	INFO scripts.py:458 -- Using IP address 10.0.0.10 for this node.
+2020-07-15 03:12:09,266	INFO resource_spec.py:223 -- Starting Ray with 4.05 GiB memory available for workers and up to 2.04 GiB for objects. You can adjust these settings with ray.init(memory=<bytes>, object_store_memory=<bytes>).
+2020-07-15 03:12:10,342	INFO services.py:1193 -- View the Ray dashboard at [1m[32mlocalhost:8265[39m[22m
+2020-07-15 03:12:10,431	INFO scripts.py:488 -- 
+Started Ray on this node. You can add additional nodes to the cluster by calling
+
+    ray start --address='10.0.0.10:6379' --redis-password='ecd2558d-6496-4ae5-8c07-4e7007739e07'
+
+from the node you wish to add. You can connect a driver to the cluster from Python by running
+
+    import ray
+    ray.init(address='auto', redis_password='ecd2558d-6496-4ae5-8c07-4e7007739e07')
+
+If you have trouble connecting from a different machine, check that your firewall is configured properly. If you wish to terminate the processes that have been started, run
+
+    ray stop
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0715 03:12:37.151628  2069  2069 global_state_accessor.cc:25] Redis server address = 10.0.0.10:6379, is test flag = 0
+I0715 03:12:37.152645  2069  2069 redis_client.cc:141] RedisClient connected.
+I0715 03:12:37.161427  2069  2069 redis_gcs_client.cc:90] RedisGcsClient Connected.
+I0715 03:12:37.162758  2069  2069 service_based_gcs_client.cc:188] Reconnected to GCS server: 10.0.0.10:43502
+I0715 03:12:37.162988  2069  2069 service_based_accessor.cc:79] Reestablishing subscription for job info.
+I0715 03:12:37.162999  2069  2069 service_based_accessor.cc:380] Reestablishing subscription for actor info.
+I0715 03:12:37.163007  2069  2069 service_based_accessor.cc:747] Reestablishing subscription for node info.
+I0715 03:12:37.163012  2069  2069 service_based_accessor.cc:1019] Reestablishing subscription for task info.
+I0715 03:12:37.163018  2069  2069 service_based_accessor.cc:1191] Reestablishing subscription for object locations.
+I0715 03:12:37.163024  2069  2069 service_based_accessor.cc:1302] Reestablishing subscription for worker failures.
+I0715 03:12:37.163033  2069  2069 service_based_gcs_client.cc:81] ServiceBasedGcsClient Connected.
+2020-07-15 03:12:41,065	WARNING worker.py:1115 -- The actor or task with ID ffffffffffffffff876814b80100 is pending and cannot currently be scheduled. It requires {CPU: 1.000000} for execution and {CPU: 1.000000} for placement, but this node only has remaining {node:10.0.0.10: 1.000000}, {object_store_memory: 1.367188 GiB}, {CPU: 2.000000}, {memory: 4.052734 GiB}, {GPU: 2.000000}. In total there are 0 pending tasks and 1 pending actors on this node. This is likely due to all cluster resources being claimed by actors. To resolve the issue, consider creating fewer actors or increase the resources available to this Ray cluster. You can ignore this message if this Ray cluster is expected to auto-scale.
+2020-07-15 03:12:41,198	INFO (unknown file):0 -- gc.collect() freed 117 refs in 0.046789548000006675 seconds
+2020-07-15 03:12:41,979	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.0}.
+2020-07-15 03:12:42,046	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.0}.
+2020-07-15 03:12:42,422	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.0}.
+2020-07-15 03:12:43,448	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 1.0716326574063417}.
+2020-07-15 03:12:44,123	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 1.07162662480159}.
+2020-07-15 03:12:44,280	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 1.0716180836880014}.
+2020-07-15 03:12:46,290	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 1.0716104282093761}.
+2020-07-15 03:12:48,722	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.30108225742598194}.
+2020-07-15 03:12:50,122	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3005922875511602}.
+2020-07-15 03:12:50,488	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3009254275836981}.
+2020-07-15 03:12:51,084	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.30384261464484474}.
+2020-07-15 03:12:52,859	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3017983412867187}.
+2020-07-15 03:12:54,767	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.30339830298854675}.
+2020-07-15 03:13:01,784	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.31191993198229184}.
+2020-07-15 03:13:03,271	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3121455642546511}.
+2020-07-15 03:13:11,657	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3129852784825293}.
+2020-07-15 03:13:22,672	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.31926416394777}.
+2020-07-15 03:13:23,687	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3210174575037472}.
+2020-07-15 03:13:35,550	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.32794765641707135}.
+2020-07-15 03:13:38,440	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.32808443721475067}.
+2020-07-15 03:13:46,351	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.33604588662045076}.
+2020-07-15 03:13:50,954	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3356211378014784}.
+2020-07-15 03:13:50,970	WARNING ray_trial_executor.py:414 -- Over the last 60 seconds, the Tune event loop has been backlogged processing new results. Consider increasing your period of result reporting to improve performance.
+2020-07-15 03:13:51,447	WARNING worker.py:1115 -- The actor or task with ID fffffffffffffffff57f9d810100 is pending and cannot currently be scheduled. It requires {CPU: 1.000000} for execution and {CPU: 1.000000} for placement, but this node only has remaining {node:10.0.0.10: 1.000000}, {object_store_memory: 1.367188 GiB}, {CPU: 1.000000}, {memory: 4.052734 GiB}, {GPU: 2.000000}. In total there are 0 pending tasks and 1 pending actors on this node. This is likely due to all cluster resources being claimed by actors. To resolve the issue, consider creating fewer actors or increase the resources available to this Ray cluster. You can ignore this message if this Ray cluster is expected to auto-scale.
+2020-07-15 03:13:51,681	INFO (unknown file):0 -- gc.collect() freed 895 refs in 0.03608656800000176 seconds
+[2m[36m(pid=2483)[0m 2020-07-15 03:13:51,678	INFO (unknown file):0 -- gc.collect() freed 45 refs in 0.025050843000002487 seconds
+2020-07-15 03:13:57,578	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.33618730069343794}.
+2020-07-15 03:14:05,380	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3414889020495915}.
+2020-07-15 03:14:06,000	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3418343851382266}.
+2020-07-15 03:14:16,695	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.348796083832994}.
+2020-07-15 03:14:18,258	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3482477173588139}.
+2020-07-15 03:14:23,448	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.35492835239335774}.
+srun: Job 7 step creation temporarily disabled, retrying
+2020-07-15 03:14:31,742	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3562879377440553}.
+2020-07-15 03:14:37,883	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3622472226759177}.
+2020-07-15 03:14:41,758	WARNING worker.py:1115 -- The actor or task with ID ffffffffffffffffbb29eacc0100 is pending and cannot currently be scheduled. It requires {CPU: 1.000000} for execution and {CPU: 1.000000} for placement, but this node only has remaining {node:10.0.0.10: 1.000000}, {object_store_memory: 1.367188 GiB}, {CPU: 1.000000}, {memory: 4.052734 GiB}, {GPU: 2.000000}. In total there are 0 pending tasks and 1 pending actors on this node. This is likely due to all cluster resources being claimed by actors. To resolve the issue, consider creating fewer actors or increase the resources available to this Ray cluster. You can ignore this message if this Ray cluster is expected to auto-scale.
+2020-07-15 03:14:41,868	INFO (unknown file):0 -- gc.collect() freed 384 refs in 0.06388561699998263 seconds
+2020-07-15 03:14:44,102	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3612986127779716}.
+2020-07-15 03:14:51,674	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.36422981666831555}.
+2020-07-15 03:14:52,023	INFO (unknown file):0 -- gc.collect() freed 527 refs in 0.049383549000026505 seconds
+2020-07-15 03:14:54,049	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3655984076307117}.
+2020-07-15 03:14:54,064	WARNING ray_trial_executor.py:414 -- Over the last 60 seconds, the Tune event loop has been backlogged processing new results. Consider increasing your period of result reporting to improve performance.
+2020-07-15 03:15:00,977	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.370867770554697}.
+2020-07-15 03:15:04,216	INFO bayesopt.py:198 -- Skipping duplicated config: {'x': 0.3699453335133951}.
+2020-07-15 03:16:03,078	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.707819938659668 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:16:28,680	WARNING import_thread.py:136 -- The actor 'ImplicitFunc' has been exported 100 times. It's possible that this warning is accidental, but this may indicate that the same remote function is being defined repeatedly from within many tasks and exported to all of the workers. This can be a performance issue and can be resolved by defining the remote function on the driver instead. See https://github.com/ray-project/ray/issues/6240 for more discussion.
+2020-07-15 03:16:34,226	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.6761314868927002 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:16:44,316	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.5723414421081543 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:17:04,835	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.5621583461761475 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:17:15,455	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.7377557754516602 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:17:25,677	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.7737812995910645 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:17:35,883	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.6898422241210938 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:17:45,978	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.5908651351928711 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:17:56,389	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.702923059463501 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:18:07,018	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.6547210216522217 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:18:17,474	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.6466274261474609 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:18:27,721	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.7050120830535889 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:18:38,666	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.9974770545959473 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:18:49,173	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.9893274307250977 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:18:59,644	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.8003664016723633 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:19:10,202	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.7847650051116943 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:19:20,618	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.7939198017120361 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:19:31,308	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.0052218437194824 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:19:41,863	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.7537903785705566 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:19:53,011	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.082484483718872 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:20:03,603	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.0660858154296875 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:20:14,024	WARNING util.py:137 -- The `experiment_checkpoint` operation took 0.9923980236053467 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:20:24,235	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.1297118663787842 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:20:35,064	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.203094244003296 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:20:46,097	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.0001952648162842 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:20:56,776	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.2151679992675781 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:21:07,385	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.0823054313659668 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:21:18,042	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.7106153964996338 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:21:28,225	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.2542414665222168 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:21:38,411	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.007824420928955 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:21:49,505	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.267869472503662 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:00,175	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.2762513160705566 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:10,727	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.73805570602417 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:21,268	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.35520339012146 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:31,872	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.451754093170166 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:42,185	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.2027387619018555 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:52,945	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.3660144805908203 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:22:54,068	WARNING worker.py:1115 -- The actor or task with ID fffffffffffffffff81e43d20100 is pending and cannot currently be scheduled. It requires {CPU: 1.000000} for execution and {CPU: 1.000000} for placement, but this node only has remaining {node:10.0.0.10: 1.000000}, {object_store_memory: 1.367188 GiB}, {CPU: 2.000000}, {memory: 4.052734 GiB}, {GPU: 2.000000}. In total there are 0 pending tasks and 2 pending actors on this node. This is likely due to all cluster resources being claimed by actors. To resolve the issue, consider creating fewer actors or increase the resources available to this Ray cluster. You can ignore this message if this Ray cluster is expected to auto-scale.
+2020-07-15 03:22:54,230	INFO (unknown file):0 -- gc.collect() freed 117 refs in 0.07203161399991131 seconds
+2020-07-15 03:23:03,572	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.9018399715423584 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:23:13,915	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.4486968517303467 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:23:24,078	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.492849588394165 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:23:34,215	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.3990962505340576 seconds to complete, which may be a performance bottleneck.
+2020-07-15 03:23:44,792	WARNING util.py:137 -- The `experiment_checkpoint` operation took 1.9016087055206299 seconds to complete, which may be a performance bottleneck.
+     my_custom_loss  ...                                             logdir
+0         56.112120  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+1        361.543077  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+2        214.326052  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+3        143.356792  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+4          9.736726  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+..              ...  ...                                                ...
+500        0.138909  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+501        0.140920  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+502        0.138626  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+503        0.140959  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+504        0.141405  ...  /home/fengchenliu_lbl_gov/distributed_bayesian...
+
+[505 rows x 20 columns]
