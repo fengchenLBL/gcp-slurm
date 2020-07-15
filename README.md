@@ -1,7 +1,8 @@
-1. ## Deploy an Auto-Scaling HPC Cluster with Slurm on Google Cloud
-Successfully installed distributed_bayesian_optimization on a Google Cloud cluster. @justaddcoffee, I shared a google doc with you.
+## Deploy an Auto-Scaling HPC Cluster with Slurm on Google Cloud
+* Follow this Google tutorial to install the Slurm cluster: [https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0)
+* To add [preemptible](https://cloud.google.com/preemptible-vms) GPU nodes, modify the slurm file in the tutorial step 3, or use this slurm file [slurm-cluster-gpu.yaml]()
 
-2. ## Use Ray to run distributed Bayesian optimization on Slurm cluster
+## Use Ray to run distributed Bayesian optimization on Slurm cluster
 Log in to the slurm cluster login nodenode
 ```
 gcloud compute ssh g2-login0 --zone=<ZONE>
