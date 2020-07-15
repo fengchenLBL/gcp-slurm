@@ -1,6 +1,6 @@
 ## Deploy an Auto-Scaling HPC Cluster with Slurm on Google Cloud
 * Follow this Google tutorial to install the Slurm cluster: [https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0)
-* To add [preemptible](https://cloud.google.com/preemptible-vms) GPU nodes, modify the slurm file in the tutorial step 3, or use this slurm file [slurm-cluster-gpu.yaml](slurm/slurm-cluster-gpu.yaml)
+* To add [preemptible](https://cloud.google.com/preemptible-vms) GPU nodes, modify the slurm file in [the tutorial step 3](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#2), or use this slurm file [slurm-cluster-gpu.yaml](slurm/slurm-cluster-gpu.yaml)
 
 ## Use Ray to run [Distributed Bayesian optimization](https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git) on Slurm cluster
 * Log in to the slurm cluster login nodenode
@@ -27,4 +27,4 @@ sbatch bayesian_test2.sh
 
 * Output:
   * [BO.csv](distributed_bayesian_optimization/BO.csv)
-  * [slurm log file](distributed_bayesian_optimization/slurm-5.out)
+  * [slurm logfile](distributed_bayesian_optimization/slurm-5.out)
