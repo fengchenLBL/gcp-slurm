@@ -27,4 +27,4 @@ sbatch bayesian_test2.sh
 
 * Output:
   * [BO.csv](distributed_bayesian_optimization/BO.csv)
-  * [slurm logfile](distributed_bayesian_optimization/slurm-5.out)
+  * [slurm logfile](distributed_bayesian_optimization/slurm-7.out)
