@@ -2,7 +2,7 @@
 * Follow this Google tutorial to install the Slurm cluster: [https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0)
 * To add [preemptible](https://cloud.google.com/preemptible-vms) GPU nodes, modify the slurm config file in [the tutorial step 3](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#2), or use this slurm config file [slurm-cluster-gpu.yaml](slurm/slurm-cluster-gpu.yaml) when you [deploy the configuration](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#3)
 
-## 2. Use Ray to run [Distributed Bayesian optimization](https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git) on Slurm cluster
+## 2. Use Ray to run [Distributed Bayesian Optimization](https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git) on Slurm cluster
 * Log in to the slurm cluster login node
 ```
 # g2-login0 is the name of slurm login node
