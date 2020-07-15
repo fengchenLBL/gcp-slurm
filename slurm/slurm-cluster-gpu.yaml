@@ -107,7 +107,7 @@ resources:
       - name              : debug
         machine_type      : n1-standard-2
         max_node_count    : 10
-        zone              : us-central1-b
+        zone              : us-central1-a
 
     # Optional compute configuration fields
 
