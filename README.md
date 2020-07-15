@@ -9,7 +9,7 @@
 gcloud compute ssh g2-login0 --zone=<ZONE>
 ```
 
-* Download [distributed_bayesian_optimization](https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git) repo and install the required packages on the slum login node:
+* Download [distributed_bayesian_optimization](https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git) repo and install the required packages on the slurm login node:
 ```
 git clone https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git
 cd distributed_bayesian_optimization
