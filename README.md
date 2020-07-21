@@ -1,6 +1,6 @@
 ## 1. Deploy an Auto-Scaling HPC Cluster with Slurm on Google Cloud
 * Follow this Google tutorial to install the Slurm cluster: [https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#0)
-* To add [preemptible](https://cloud.google.com/preemptible-vms) GPU nodes: 
+* To add [preemptible](https://cloud.google.com/preemptible-vms) GPU nodes (for [users that are outside of your organization](https://cloud.google.com/compute/docs/instances/managing-instance-access#configure_users) to access your VMs): 
   * modify the slurm config file in [the tutorial step 3](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#2), 
   * or use this slurm config file [slurm-cluster-gpu.yaml](slurm/slurm-cluster-gpu.yaml) and [slurm.jinja](slurm/slurm.jinja) when you [deploy the configuration](https://codelabs.developers.google.com/codelabs/hpc-slurm-on-gcp/#3), and run 
     * `gcloud deployment-manager deployments create google2 --config slurm-cluster-gpu.yaml`
