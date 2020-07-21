@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#SBATCH --job-name=hostname_sleep_sample
+#SBATCH --output=out_%j.txt
+#
+#SBATCH --nodes=2
+
+srun hostname
+sleep 60
