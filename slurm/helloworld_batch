@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#SBATCH --job-name=hello_world
+#SBATCH --output=hello_world_%j.txt
+#
+#SBATCH --nodes=2
+
+srun hello_c
