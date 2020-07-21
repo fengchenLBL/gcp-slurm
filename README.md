@@ -9,7 +9,7 @@
 * Log in to the slurm cluster login node
 ```
 # g2-login0 is the name of slurm login node
-gcloud compute ssh g2-login0 --zone=us-central1-a
+gcloud compute ssh g2-login0 --zone=<ZONE>
 ```
 
 * Download [distributed_bayesian_optimization](https://github.com/LucaCappelletti94/distributed_bayesian_optimization.git) repo and install the required packages on the slurm login node:
