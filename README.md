@@ -25,6 +25,7 @@ bash setup.sh
 ```
 * Submit a slurm testing job [bayesian_test2.sh](distributed_bayesian_optimization/bayesian_test2.sh):
 ```
+wget https://raw.githubusercontent.com/fengchenLBL/gcp-slurm/master/distributed_bayesian_optimization/bayesian_test2.sh
 sbatch bayesian_test2.sh
 ```
 
