@@ -8,7 +8,7 @@
     cd slurm-gcp
     
     wget https://raw.githubusercontent.com/fengchenLBL/gcp-slurm/master/slurm/slurm-cluster-gpu.yaml
-    wget https://raw.githubusercontent.com/fengchenLBL/gcp-slurm/master/slurm/slurm.jinja
+    wget https://raw.githubusercontent.com/fengchenLBL/gcp-slurm/master/slurm/slurm.jinja -O slurm.jinja
     
     gcloud deployment-manager deployments create google2 --config slurm-cluster-gpu.yaml
     ```
