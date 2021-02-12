@@ -13,20 +13,20 @@
     gcloud deployment-manager deployments create google2 --config slurm-cluster-gpu.yaml
     ```
     
-## 2. Generate a new SSH key and add it to the Slurm Login Node
+## 2. Generate a new SSH key and add it to the Slurm login node
 ### This SSH login works for any users that are outside or inside of your organization. 
 * From your local terminal, generate an SSH key-pair for a new user, e.g. `newuser01`
 ```
  ssh-keygen -t rsa -b 4096 -f ./newuser01 -C "newuser01"
 ```
-* A public SSH key `./newuser01.pub` is generated: 
+* A public SSH key `./newuser01.pub` and a private SSH key `./newuser01` are generated: 
 ```
 cat ./newuser01.pub
 ```
 * From the GCP Console, click the slurm login node (in this example `g2-login0`): __EDIT__ -> __SSH Kyes__ -> __Add item__
   * Paste the the public SSH key above
   * Click __Save__
-* Log in to the slurm cluster login node from your local terminal via the SSH key you just created for user `newuser01`
+* Log in to the slurm cluster login node from your local terminal via the private SSH key you just created for user `newuser01`
   * Fromt the GCP Console, copy the __External IP__ of the slurm login node `g2-login0`
   * From your local terminal:
   ```
