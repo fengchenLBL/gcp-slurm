@@ -27,7 +27,7 @@ cat ./newuser01.pub
   * Paste the the public SSH key above
   * Click __Save__
 * Log in to the slurm cluster login node from your local terminal via the private SSH key you just created for user `newuser01`
-  * Fromt the GCP Console, copy the __External IP__ of the slurm login node `g2-login0`
+  * From the GCP Console, copy the __External IP__ of the slurm login node `g2-login0`
   * From your local terminal:
   ```
   ssh -i ./newuser01 newuser01@External_IP
